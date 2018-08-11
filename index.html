@@ -1,71 +1,43 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en-us">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trivia Game</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trivia Game</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <div id="splashscreen">
-        <div class="splashBox">
-            <h3>Welcome to</h3>
-            <h1>The Trivia!</h1>
-            <hr />
-            <p>You have 60 seconds to guess 10 questions.</p>
-            <br />
-            <p>Click To Start</p>
-            <button type="button" id="start-btn" class="btn btn-primary black-background white">JUST DO IT.</button>
-        </div>
-    </div>
+ <body>
+    <header>My Trivia!</header>
+    <section class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h2 id="start">start</h2>
+                <div id="question"></div>
+                <div id="message"></div>
+                <div id="answers">
+                    <div class="answer" col-lg-12" id="answer0" value="0"></div>
+                    <div class="answer" col-lg-12" id="answer1" value="1"></div>
+                    <div class="answer" col-lg-12" id="answer2" value="2"></div>
+                    <div class="answer" col-lg-12" id="answer3" value="3"></div>
+                </div>
 
-    <div id="answerScreen">
-        <div class="splashBox2">
-            <h2>Lets see how you did</h2>
-            <hr />
-            <p id="correctScreen">Correct Answers: </p>
-            <p id="wrongScreen">Wrong Answers: </p>
-        </div>
-    </div>
+                <img src="assets/images/triviaImage.jpeg" id="image">
+                <div id="timer"></div>
+                <div id="buttons">
+                    <div class="btn btn-success" type="button" text="Start" id="start">Start</div>
+                    <div class="btn btn-primary" type="button" text="Done" id="done">Done</div>
+                 </div>
 
-
-    <div id="timesUp">
-        <div class="wrongBox">
-            <h2 class="up">Times Up!</h2>
-            <hr />
-            <p>Here's youre score:</p>
-            <p id="correctTimesUp">Correct Answers: </p>
-            <p id="wrongTimesUp">Wrong Answers: </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <header>Nike Trivia!</header>
-        <div class="row timeRemain">Time Remaining:
-            <div id="time-remain">60</div>
+                <div id="score"></div>
+            </div>
         </div>
 
-        <div class="questions">
-            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
-            <!-- end equestions-->
-        </div>
 
-        <!-- Main Container-->
-    </div>
+    </section>
     <script src="assets/javascript/app.js "></script>
 </body>
 
