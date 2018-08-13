@@ -1,7 +1,9 @@
 body {
-    background-image: url('assets/images/triviaImage.jpeg');
-    font-family: 'Anton', sans-serif;
-    color: black;
-    letter-spacing: 2px;
-    background-size: 100%;
+    background-color: rgba(255, 227, 68, 0.336);
+}
+
+  h1 {
+    color: #965c1a;
+    text-decoration: azure;
+    font-family: "Times New Roman", Times, serif;
 }
