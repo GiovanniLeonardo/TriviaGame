@@ -8,37 +8,17 @@
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-    </head>
-
- <body>
-    <header>My Trivia!</header>
-    <section class="container">
-        <div class="row">
-            <div class="jumbotron">
-                <h2 id="start">start</h2>
-                <div id="question"></div>
-                <div id="message"></div>
-                <div id="answers">
-                    <div class="answer" col-lg-12 id="answer0" value="0"></div>
-                    <div class="answer" col-lg-12 id="answer1" value="1"></div>
-                    <div class="answer" col-lg-12 id="answer2" value="2"></div>
-                    <div class="answer" col-lg-12 id="answer3" value="3"></div>
-                </div>
-
-                <img src="assets/images/triviaImage.jpeg" id="image">
-                <div id="timer"></div>
-                <div id="buttons">
-                    <div class="btn btn-success" type="button" text="Start" id="start">Start</div>
-                    <div class="btn btn-primary" type="button" text="Done" id="done">Done</div>
-                 </div>
-
-                <div id="score"></div>
-            </div>
+   </head>
+<body>
+    <div id="container">
+        <h1>Totally Trivial Trivia</h1>
+        <div id="subcontainer">
+                <h2>To play the game, click "Start" and select the correct answer for each question.<br>
+                    You have 60 seconds to answer all the questions, if you finish early, click "Done" to stop the clock.<br>
+                    Good Luck!</h2>
+        <button id="start">Start</button>
         </div>
-
-
-    </section>
-    <script src="assets/javascript/app.js "></script>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
-
 </html>
