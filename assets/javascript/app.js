@@ -65,12 +65,12 @@ var questions = [{
       // After use click "Start" remove the "Start" button and set the interval to xsec count down and display time remaining.
       start: function(){
       timer = setInterval(game.countdown,1000); 
-      $('#subcontainer').prepend('<h2>Time remaining: <span id="counter">30</span> Seconds</h2>'); // display time remaining
+      $('#subcontainer').prepend('<h3>Time remaining: <span id="counter">30</span> Seconds</h3>'); // display time remaining
       $('#start').remove(); 
       $('#intro').remove();
       // function for question loop
       for(var i=0; i<questions.length; i++){
-          $('#subcontainer').append('<h3>'+questions[i].question+'<h3>');
+          $('#subcontainer').append('<h5>'+questions[i].question+'<h5>');
           for(var j=0;j<questions[i].answers.length;j++){
               //append each and every question with a name equal to the number of the question along with it's value.
               $('#subcontainer').append("<input type='radio' name="+questions[i].name+" value='"+questions[i].answers[j]+"'>"+questions[i].answers[j]+"")
