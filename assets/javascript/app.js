@@ -7,33 +7,33 @@ $('#start').on('click', function(){
 // After user clicks "Start" display the list (array) of questions and choice list
 var questions = [{
   question: 'Which is the only American Football team to go a whole season undefeated, including the Super Bowl?',
-  answers: [' The 1985 Chicago Bears',  ' The 2007 New England Patriots', ' The 1972 Miami Dolphins'],
+  answers: ['The 1985 Chicago Bears', 'The 2007 New England Patriots', 'The 1972 Miami Dolphins'],
   correctAnswer: 'The 1972 Miami Dolphins',
   name: 'Football',
   
 },{
   question: "How many NBA championships did Michael Jordan win with the Chicago Bulls?",
-  answers: [" Five", " Six", " Seven"],
+  answers: ["Five", "Six", "Seven"],
   correctAnswer: "Six",
   name: 'Basketball',
 },{
   question: "Which is the only team to play in every soccer World Cup tournament?",
-  answers: [" Brazil", " Spain", " Germany"],
+  answers: ["Brazil", "Spain", "Germany"],
   correctAnswer: "Brazil",
   name: 'Soccer',
 }, {
   question: "Who has won more tennis grand slam titles?",
-  answers: [" Rafael Nadal", " Serena Williams", " Roger Federer"],
+  answers: ["Rafael Nadal", "Serena Williams", "Roger Federer"],
   correctAnswer: "Serena Williams",
   name: 'Tennis',
 }, {
   question: "Which boxer inflicted Muhammad Ali's first defeat in professional boxing?",
-  answers: [" Larry Holmes", " Joe Frazier", " Leon Spinks"],
+  answers: ["Larry Holmes", "Joe Frazier", "Leon Spinks"],
   correctAnswer: "Joe Frazier",
   name: 'Boxing',
 }, {
   question: "Which golf tournament did Tiger Woods win by 12 strokes in 1997 to record his first major championship win?",
-  answers: [" U.S. Open", " The PGA", " The Masters"],
+  answers: ["U.S. Open", "The PGA", "The Masters"],
   correctAnswer: "The Masters",
   name: 'Golf',
 }
