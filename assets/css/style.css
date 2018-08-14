@@ -1,11 +1,12 @@
-body{
+
+ body{
     background-image: url('https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
     background-size: auto;
  
   }
   
-  #wrapper{
+  #container{
     margin:2.5% auto;
     background-color: rgb(209, 233, 165);
     width:960px;
@@ -14,11 +15,10 @@ body{
     text-align: left;
   }
   
-  #subwrapper{
+  #subcontainer{
     position: relative;
     text-align: left;
   }
-
 
 
   h2 {
